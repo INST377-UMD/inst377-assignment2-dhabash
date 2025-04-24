@@ -1,0 +1,49 @@
+<html>
+<head>
+  <title>Class Activities - Home</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <!-- Main Content -->
+  <main>
+    <h1>Welcome to Class Activities!</h1>
+
+    <!-- Quote Section -->
+    <section id="quote-section">
+      <p id="quote">Loading quote...</p>
+    </section>
+
+    <!-- Navigation Buttons -->
+    <div class="button-container">
+      <button class="custom-button" onclick="window.location.href='stocks.html'">Stocks</button>
+      <button class="custom-button" onclick="window.location.href='dogs.html'">Dogs</button>
+    </div>
+  </main>
+
+  <!-- Audio Instructions -->
+  <div id="audio-instructions">
+    <h3>Voice Commands</h3>
+    <ul>
+      <li>Say "Hello" – shows Hello World alert</li>
+      <li>Say "Change the color to red/blue/etc" – changes background</li>
+      <li>Say "Navigate to stocks/home/dogs" – goes to that page</li>
+    </ul>
+    <button onclick="annyang.start()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
