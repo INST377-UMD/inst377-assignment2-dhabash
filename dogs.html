@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dog Page</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Navigation -->
+  <nav>
+    <ul>
+      <li><a href="homepage.html">Home</a></li>
+      <li><a href="stocks.html">Stocks</a></li>
+      <li><a href="dogs.html">Dogs</a></li>
+    </ul>
+  </nav>
+
+  <main>
+    <h1>Dog Gallery</h1>
+
+    <!-- Carousel -->
+    <section id="carousel-container">
+      <div id="carousel" class="slider"></div>
+    </section>
+
+    <!-- Breed Buttons -->
+    <section>
+      <h2>Dog Breeds</h2>
+      <div id="breed-buttons" class="button-container"></div>
+    </section>
+
+   <!-- Breed Info Container -->
+   <section id="breed-info" style="display: none; margin: 2rem; padding: 1rem; border: 2px solid black; border-radius: 10px; background-color: white;">
+    <h2 id="breedname"></h2>
+    <p id="breeds"></p>
+    <p><strong>Min Life:</strong> <span id="minlife"></span> years</p>
+    <p><strong>Max Life:</strong> <span id="maxlife"></span> years</p>
+  </section>
+  
+
+  </main>
+
+  <!-- Audio Instructions -->
+  <div id="audio-instructions">
+    <h3>Voice Commands</h3>
+    <ul>
+      <li>Say "Hello" – shows Hello World alert</li>
+      <li>Say "Change the color to red/blue/etc" – changes background</li>
+      <li>Say "Navigate to home/stocks/dogs" – goes to that page</li>
+      <li>Say "Load Dog Breed husky/pug/etc" – loads breed info</li>
+    </ul>
+    <button onclick="annyang.start()">Turn On Audio</button>
+    <button onclick="annyang.abort()">Turn Off Audio</button>
+  </div>
+
+  <!-- Scripts -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/annyang/2.6.1/annyang.min.js"></script>
+  <script src="script.js"></script>
+
+</body>
+</html>
